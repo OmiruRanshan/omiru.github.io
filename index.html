@@ -1,0 +1,1614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Omiru Ranshan</title>
+  <meta name="title" content="Omiru Ranshan">
+  <meta name="description" content="This is a photographer and multimedia specialist portfolio website for Omiru Ranshan.">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <script>
+    (() => {
+      const storageKey = 'theme';
+      const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+
+      try {
+        const savedTheme = localStorage.getItem(storageKey);
+        const theme = savedTheme === 'light' || savedTheme === 'dark'
+          ? savedTheme
+          : (prefersLight ? 'light' : 'dark');
+
+        document.documentElement.setAttribute('data-theme', theme);
+        document.documentElement.style.colorScheme = theme;
+      } catch (error) {
+        const fallbackTheme = prefersLight ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', fallbackTheme);
+        document.documentElement.style.colorScheme = fallbackTheme;
+      }
+    })();
+  </script>
+
+  <!-- 
+    - custom CSS link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom font link
+  -->
+  <link rel="stylesheet" href="./assets/font/font.css">
+  <!-- Add boxicons for footer contact icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/loading.svg">
+  <link rel="preload" as="image" href="./assets/images/loading-circle.svg">
+
+
+
+  
+</head>
+
+<body class="active" id="top">
+
+  <!-- 
+    -#PRELOADING
+  -->
+
+  <div class="loading" data-loading>
+    <img src="./assets/images/loading.svg" width="55" height="55" alt="loading" class="img">
+    <img src="./assets/images/loading-circle.svg" width="70" height="70" alt="" class="circle">
+  </div>
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+  <div class="container">
+
+    <a href="#" class="logo">
+      <img src="./assets/images/logo.svg" width="40" height="40" alt="Omiru home">
+    </a>
+
+    <!-- Theme toggle (centered) -->
+    <button class="theme-toggle" aria-label="toggle theme" data-theme-toggle>
+      <!-- sun -->
+      <i class='bx bxs-sun sun-icon' aria-hidden="true"></i>
+      <!-- moon -->
+      <i class='bx bxs-moon moon-icon' aria-hidden="true"></i>
+    </button>
+
+    <!-- Shopping button (right of theme toggle) -->
+    <a
+      class="shop-btn header-icon"
+      href="#"
+      aria-label="Open shop"
+      title="Shop"
+    >
+      <i class='bx bx-shopping-bag' aria-hidden="true"></i>
+    </a>
+
+    <!-- Settings button  -->
+    <a
+      class="tools-btn header-icon"
+      href="#"
+      aria-label="Open settings"
+      title="Settings"
+    >
+      <i class='bx bx-cog' aria-hidden="true"></i>
+    </a>
+
+    <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+      <img src="./assets/images/menu.svg" width="17" height="17" alt="menu icon">
+    </button>
+
+    <nav class="navbar" data-navbar>
+
+      <div class="navbar-top">
+        <a href="#" class="logo">
+          
+        </a>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <span class="span one"></span>
+          <span class="span two"></span>
+        </button>
+      </div>
+
+      <ul class="navbar-list">
+
+        <li class="navbar-item">
+          <a href="#home" class="navbar-link" data-nav-link>Home</a>
+        </li>
+
+        <li class="navbar-item">
+          <a href="#gallery" class="navbar-link" data-nav-link>Gallery</a>
+        </li>
+
+        <li class="navbar-item">
+          <a href="#about" class="navbar-link" data-nav-link>About</a>
+        </li>
+
+        <li class="navbar-item">
+          <a href="#services" class="navbar-link" data-nav-link>Services</a>
+        </li>
+
+        <li class="navbar-item">
+          <a href="#portfolio" class="navbar-link" data-nav-link>Portfolio</a>
+        </li>
+
+        <li class="navbar-item">
+          <a href="#contact" class="navbar-link" data-nav-link>Contact us</a>
+        </li>
+
+      </ul>
+
+      <button class="login-btn">
+        <img src="./assets/images/user.svg" width="21" height="21" alt="user icon">
+
+        <span class="span">Login</span>
+      </button>
+
+      <p class="navbar-title">My Address</p>
+
+      <address class="navbar-text">
+        Chilaw, Puttalam, Sri Lanka
+      </address>
+
+      <p class="navbar-text">
+        Urgent issue? call us at
+        <a href="tel:0772602443" class="contact-link">0772602443</a>
+      </p>
+
+      <a href="#" class="logo">
+          <img src="./assets/images/nav-logo.svg" width="140" height="40" alt="Omiru home" class="img">
+        </a>
+
+
+    </nav>
+
+    <div class="overlay" data-nav-toggler data-overlay></div>
+
+  </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home" aria-label="home">
+        <div class="container">
+
+          <img src="./assets/images/hero-banner.png" width="422" height="422" alt="" class="hero-banner">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">Omiru Ranshan</h1>
+
+            <div class="wrapper h2">
+              <strong class="strong" data-letter-effect>Cyber Security Engineer</strong>
+              <strong class="strong" data-letter-effect>Cyber Security Analyst</strong>
+              <strong class="strong" data-letter-effect>Ethical Hacker</strong>
+              <strong class="strong" data-letter-effect>Penetration Tester</strong>
+              <strong class="strong" data-letter-effect>SOC Analyst</strong>
+              <strong class="strong" data-letter-effect>Network Security Engineer</strong>
+              <strong class="strong" data-letter-effect>Digital Forensics Specialist</strong>
+              <strong class="strong" data-letter-effect>AI/ML Engineer</strong>
+
+
+            </div>
+
+            <p class="hero-text">2+ Years Of Experience.</p>
+
+          </div>
+
+        </div>
+
+        <img src="./assets/images/hero-shape.svg" width="211" height="189" alt="" class="shape">
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #GALLERY
+      -->
+
+      <section class="section gallery" id="gallery">
+  <div class="container">
+
+    <ul class="gallery-list">
+
+      <li class="gallery-item" data-reveal>
+
+        <!-- Project 1 -->
+        <div class="gallery-card">
+          <figure class="card-banner img-holder has-before">
+            <img src="./assets/images/gallery-1.png" loading="lazy" alt="Cybersecurity Dashboard" class="img-cover">
+          </figure>
+
+          <div class="card-content">
+            <h3 class="h6">
+              <a href="#" class="card-title">Cybersecurity Dashboard</a>
+            </h3>
+            <span class="card-tag">Security Analysis</span>
+          </div>
+
+          <a href="#" class="btn-icon">
+            <img src="./assets/images/arrow-forward.svg" loading="lazy" alt="arrow">
+          </a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="gallery-card">
+          <figure class="card-banner img-holder has-before">
+            <img src="./assets/images/gallery-2.png" loading="lazy" alt="Network Scanner Tool" class="img-cover">
+          </figure>
+
+          <div class="card-content">
+            <h3 class="h6">
+              <a href="#" class="card-title">Network Scanner Tool</a>
+            </h3>
+            <span class="card-tag">Nmap / Networking</span>
+          </div>
+
+          <a href="#" class="btn-icon">
+            <img src="./assets/images/arrow-forward.svg" loading="lazy" alt="arrow">
+          </a>
+        </div>
+
+      </li>
+
+      <li class="gallery-item" data-reveal>
+
+        <!-- Project 3 -->
+        <div class="gallery-card">
+          <figure class="card-banner img-holder has-before">
+            <img src="./assets/images/gallery-3.png" loading="lazy" alt="AI Prediction Model" class="img-cover">
+          </figure>
+
+          <div class="card-content">
+            <h3 class="h6">
+              <a href="#" class="card-title">AI Prediction Model</a>
+            </h3>
+            <span class="card-tag">Machine Learning</span>
+          </div>
+
+          <a href="#" class="btn-icon">
+            <img src="./assets/images/arrow-forward.svg" loading="lazy" alt="arrow">
+          </a>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="gallery-card">
+          <figure class="card-banner img-holder has-before">
+            <img src="./assets/images/gallery-4.png" loading="lazy" alt="Malware Analysis Lab" class="img-cover">
+          </figure>
+
+          <div class="card-content">
+            <h3 class="h6">
+              <a href="#" class="card-title">Malware Analysis Lab</a>
+            </h3>
+            <span class="card-tag">Cybersecurity</span>
+          </div>
+
+          <a href="#" class="btn-icon">
+            <img src="./assets/images/arrow-forward.svg" loading="lazy" alt="arrow">
+          </a>
+        </div>
+
+      </li>
+
+      <li class="gallery-item" data-reveal>
+
+        <!-- Project 5 -->
+        <div class="gallery-card">
+          <figure class="card-banner img-holder has-before">
+            <img src="./assets/images/gallery-5.png" loading="lazy" alt="Data Analysis Project" class="img-cover">
+          </figure>
+
+          <div class="card-content">
+            <h3 class="h6">
+              <a href="#" class="card-title">Data Analysis Project</a>
+            </h3>
+            <span class="card-tag">Pandas / Visualization</span>
+          </div>
+
+          <a href="#" class="btn-icon">
+            <img src="./assets/images/arrow-forward.svg" loading="lazy" alt="arrow">
+          </a>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="gallery-card">
+          <figure class="card-banner img-holder has-before">
+            <img src="./assets/images/gallery-6.png" loading="lazy" alt="Web App Security Test" class="img-cover">
+          </figure>
+
+          <div class="card-content">
+            <h3 class="h6">
+              <a href="#" class="card-title">Web App Security Testing</a>
+            </h3>
+            <span class="card-tag">Burp Suite</span>
+          </div>
+
+          <a href="#" class="btn-icon">
+            <img src="./assets/images/arrow-forward.svg" loading="lazy" alt="arrow">
+          </a>
+        </div>
+
+      </li>
+
+      <li class="gallery-item" data-reveal>
+
+        <!-- Project 7 -->
+        <div class="gallery-card">
+          <figure class="card-banner img-holder has-before">
+            <img src="./assets/images/gallery-7.png" loading="lazy" alt="Deep Learning Model" class="img-cover">
+          </figure>
+
+          <div class="card-content">
+            <h3 class="h6">
+              <a href="#" class="card-title">Deep Learning Model</a>
+            </h3>
+            <span class="card-tag">TensorFlow / PyTorch</span>
+          </div>
+
+          <a href="#" class="btn-icon">
+            <img src="./assets/images/arrow-forward.svg" loading="lazy" alt="arrow">
+          </a>
+        </div>
+
+        <!-- Project 8 -->
+        <div class="gallery-card">
+          <figure class="card-banner img-holder has-before">
+            <img src="./assets/images/gallery-8.png" loading="lazy" alt="Cloud Deployment Project" class="img-cover">
+          </figure>
+
+          <div class="card-content">
+            <h3 class="h6">
+              <a href="#" class="card-title">Cloud Deployment Project</a>
+            </h3>
+            <span class="card-tag">Docker / Cloud</span>
+          </div>
+
+          <a href="#" class="btn-icon">
+            <img src="./assets/images/arrow-forward.svg" loading="lazy" alt="arrow">
+          </a>
+        </div>
+
+      </li>
+
+    </ul>
+
+    <a href="#services" class="scroll-down">
+      <img src="./assets/images/scroll-down.svg" loading="lazy" alt="scroll">
+    </a>
+
+    <img src="./assets/images/gallery-shape.svg" loading="lazy" alt="" class="shape">
+
+  </div>
+</section>
+
+
+
+
+      <!-- 
+  - #CATEGORY (TECH FOCUS)
+-->
+
+<section class="section category" aria-label="tech category">
+  <div class="container">
+
+    <ul class="category-list">
+
+      <li class="category-item" data-reveal>
+        <a href="#" class="category-card">
+          <h3 class="h4 card-title">Cybersecurity</h3>
+          <figure class="card-banner img-holder" style="--width: 600; --height: 690;">
+            <img src="./assets/images/category-1.jpg" width="600" height="690" loading="lazy" alt="Cybersecurity" class="img-cover">
+          </figure>
+        </a>
+      </li>
+
+      <li class="category-item" data-reveal>
+        <a href="#" class="category-card">
+          <h3 class="h4 card-title">Penetration Testing</h3>
+          <figure class="card-banner img-holder">
+            <img src="./assets/images/category-2.jpg" loading="lazy" alt="Penetration Testing" class="img-cover">
+          </figure>
+        </a>
+      </li>
+
+      <li class="category-item" data-reveal>
+        <a href="#" class="category-card">
+          <h3 class="h4 card-title">Network Security</h3>
+          <figure class="card-banner img-holder">
+            <img src="./assets/images/category-3.jpg" loading="lazy" alt="Network Security" class="img-cover">
+          </figure>
+        </a>
+      </li>
+
+      <li class="category-item" data-reveal>
+        <a href="#" class="category-card">
+          <h3 class="h4 card-title">Ethical Hacking</h3>
+          <figure class="card-banner img-holder">
+            <img src="./assets/images/category-4.jpg" loading="lazy" alt="Ethical Hacking" class="img-cover">
+          </figure>
+        </a>
+      </li>
+
+      <li class="category-item" data-reveal>
+        <a href="#" class="category-card">
+          <h3 class="h4 card-title">AI & Machine Learning</h3>
+          <figure class="card-banner img-holder">
+            <img src="./assets/images/category-2.jpg" loading="lazy" alt="AI Machine Learning" class="img-cover">
+          </figure>
+        </a>
+      </li>
+
+      <li class="category-item" data-reveal>
+        <a href="#" class="category-card">
+          <h3 class="h4 card-title">Deep Learning</h3>
+          <figure class="card-banner img-holder">
+            <img src="./assets/images/category-5.jpg" loading="lazy" alt="Deep Learning" class="img-cover">
+          </figure>
+        </a>
+      </li>
+
+      <li class="category-item" data-reveal>
+        <a href="#" class="category-card">
+          <h3 class="h4 card-title">Data Science</h3>
+          <figure class="card-banner img-holder">
+            <img src="./assets/images/category-6.jpg" loading="lazy" alt="Data Science" class="img-cover">
+          </figure>
+        </a>
+      </li>
+
+      <li class="category-item" data-reveal>
+        <a href="#" class="category-card">
+          <h3 class="h4 card-title">Cloud Computing</h3>
+          <figure class="card-banner img-holder">
+            <img src="./assets/images/category-7.jpg" loading="lazy" alt="Cloud Computing" class="img-cover">
+          </figure>
+        </a>
+      </li>
+
+      <li class="category-item" data-reveal>
+        <a href="#" class="category-card">
+          <h3 class="h4 card-title">Linux Systems</h3>
+          <figure class="card-banner img-holder">
+            <img src="./assets/images/category-8.jpg" loading="lazy" alt="Linux Systems" class="img-cover">
+          </figure>
+        </a>
+      </li>
+
+      <li class="category-item" data-reveal>
+        <a href="#" class="category-card">
+          <h3 class="h4 card-title">Programming</h3>
+          <figure class="card-banner img-holder">
+            <img src="./assets/images/category-9.jpg" loading="lazy" alt="Programming" class="img-cover">
+          </figure>
+        </a>
+      </li>
+
+      <li class="category-item" data-reveal>
+        <a href="#" class="category-card">
+          <h3 class="h4 card-title">DevOps</h3>
+          <figure class="card-banner img-holder">
+            <img src="./assets/images/category-7.jpg" loading="lazy" alt="DevOps" class="img-cover">
+          </figure>
+        </a>
+      </li>
+
+      <li class="category-item" data-reveal>
+        <a href="#" class="category-card">
+          <h3 class="h4 card-title">Projects</h3>
+          <figure class="card-banner img-holder">
+            <img src="./assets/images/category-10.jpg" loading="lazy" alt="Projects" class="img-cover">
+          </figure>
+        </a>
+      </li>
+
+    </ul>
+
+  </div>
+</section>
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about" aria-label="about me">
+        <div class="container">
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title" data-reveal="right">
+              Hi. I’m <br>
+              Omiru Ranshan
+            </h2>
+
+            <div class="wrapper has-before" data-reveal="right">
+              <p class="section-text">
+                A passionate
+                <em class="em">photographer</em>
+                who has been working in this field for the
+                <em class="em">last 2 years.</em>
+                I’m ready to give you my best.
+              </p>
+              <img src="./assets/images/signature.png" width="151" height="92" loading="lazy" alt="signature"
+                class="img">
+            </div>
+
+          </div>
+
+          <figure class="about-banner" data-reveal="left">
+
+            <div class="img-holder has-before" style="--width: 512; --height: 684;">
+              <img src="./assets/images/about-banner.png" width="512" height="684" loading="lazy" alt="Omiru Ranshan"
+                class="img-cover">
+            </div>
+
+            <img src="./assets/images/about-shape-1.png" width="178" height="178" loading="lazy" alt=""
+              class="shape shape-1">
+
+            <img src="./assets/images/about-shape-2.svg" width="659" height="653" loading="lazy" alt=""
+              class="shape shape-2">
+
+          </figure>
+
+          <img src="./assets/images/about-shape-3.svg" width="239" height="232" loading="lazy" alt=""
+            class="shape shape-3">
+
+        </div>
+      </section>
+      <!--=============== SKILLS ===============-->
+
+      <section class="skills" id="skills">
+  <div class="skills-content section-content">
+    <p class="section-subtitle container" id="skills-section-label">My skills</p>
+    <h3 class="h3 card-title" style="text-align: center;">
+      Cybersecurity & AI/ML Skills
+    </h3>
+
+    <div class="skills-toggle" data-toggle-box>
+      <button class="toggle-btn active" data-toggle-btn>Skills</button>
+      <button class="toggle-btn" data-toggle-btn>Tools</button>
+    </div>
+  </div>
+
+  <div class="skills-box" data-skills-box>
+
+    <!-- SKILLS -->
+    <ul class="skills-list">
+
+      <li>
+        <div class="skill-card">
+          <div class="tooltip">Python</div>
+          <div class="card-icon"><img src="./assets/images/python.png" alt="Python"></div>
+        </div>
+      </li>
+
+      <li>
+        <div class="skill-card">
+          <div class="tooltip">Machine Learning</div>
+          <div class="card-icon"><img src="./assets/images/ml.png" alt="Machine Learning"></div>
+        </div>
+      </li>
+
+      <li>
+        <div class="skill-card">
+          <div class="tooltip">Deep Learning</div>
+          <div class="card-icon"><img src="./assets/images/deep-learning.png" alt="Deep Learning"></div>
+        </div>
+      </li>
+
+      <li>
+        <div class="skill-card">
+          <div class="tooltip">Data Analysis</div>
+          <div class="card-icon"><img src="./assets/images/data.png" alt="Data Analysis"></div>
+        </div>
+      </li>
+
+      <li>
+        <div class="skill-card">
+          <div class="tooltip">Cybersecurity</div>
+          <div class="card-icon"><img src="./assets/images/cyber.png" alt="Cybersecurity"></div>
+        </div>
+      </li>
+
+      <li>
+        <div class="skill-card">
+          <div class="tooltip">Penetration Testing</div>
+          <div class="card-icon"><img src="./assets/images/hacking.png" alt="Pentesting"></div>
+        </div>
+      </li>
+
+      <li>
+        <div class="skill-card">
+          <div class="tooltip">Network Security</div>
+          <div class="card-icon"><img src="./assets/images/network.png" alt="Network Security"></div>
+        </div>
+      </li>
+
+      <li>
+        <div class="skill-card">
+          <div class="tooltip">Linux Systems</div>
+          <div class="card-icon"><img src="./assets/images/linux.png" alt="Linux"></div>
+        </div>
+      </li>
+
+      <li>
+        <div class="skill-card">
+          <div class="tooltip">SQL & Databases</div>
+          <div class="card-icon"><img src="./assets/images/database.png" alt="Database"></div>
+        </div>
+      </li>
+
+      <li>
+        <div class="skill-card">
+          <div class="tooltip">Cloud Computing</div>
+          <div class="card-icon"><img src="./assets/images/cloud.png" alt="Cloud"></div>
+        </div>
+      </li>
+
+    </ul>
+
+    <!-- TOOLS -->
+    <ul class="tools-list">
+
+      <li>
+        <div class="skill-card">
+          <div class="tooltip">Kali Linux</div>
+          <div class="card-icon"><img src="./assets/images/kali.png" alt="Kali Linux"></div>
+        </div>
+      </li>
+
+      <li>
+        <div class="skill-card">
+          <div class="tooltip">Nmap</div>
+          <div class="card-icon"><img src="./assets/images/nmap.png" alt="Nmap"></div>
+        </div>
+      </li>
+
+      <li>
+        <div class="skill-card">
+          <div class="tooltip">Metasploit</div>
+          <div class="card-icon"><img src="./assets/images/metasploit.png" alt="Metasploit"></div>
+        </div>
+      </li>
+
+      <li>
+        <div class="skill-card">
+          <div class="tooltip">Wireshark</div>
+          <div class="card-icon"><img src="./assets/images/wireshark.png" alt="Wireshark"></div>
+        </div>
+      </li>
+
+      <li>
+        <div class="skill-card">
+          <div class="tooltip">Burp Suite</div>
+          <div class="card-icon"><img src="./assets/images/burp.png" alt="Burp Suite"></div>
+        </div>
+      </li>
+
+      <li>
+        <div class="skill-card">
+          <div class="tooltip">TensorFlow</div>
+          <div class="card-icon"><img src="./assets/images/tensorflow.png" alt="TensorFlow"></div>
+        </div>
+      </li>
+
+      <li>
+        <div class="skill-card">
+          <div class="tooltip">PyTorch</div>
+          <div class="card-icon"><img src="./assets/images/pytorch.png" alt="PyTorch"></div>
+        </div>
+      </li>
+
+      <li>
+        <div class="skill-card">
+          <div class="tooltip">Scikit-learn</div>
+          <div class="card-icon"><img src="./assets/images/sklearn.png" alt="Scikit-learn"></div>
+        </div>
+      </li>
+
+      <li>
+        <div class="skill-card">
+          <div class="tooltip">Docker</div>
+          <div class="card-icon"><img src="./assets/images/docker.png" alt="Docker"></div>
+        </div>
+      </li>
+
+      <li>
+        <div class="skill-card">
+          <div class="tooltip">Git & GitHub</div>
+          <div class="card-icon"><img src="./assets/images/git.png" alt="Git"></div>
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+</section>
+
+
+      <!-- 
+        - #SKILLS PAGE 
+      -->
+
+      <section class="section skills-page" id="skills-page" aria-labelledby="skills-label">
+  <div class="container">
+
+    <p class="section-subtitle" id="skills-label" data-reveal>My Expertise</p>
+    <h2 class="h2 section-title" data-reveal>Cybersecurity & AI/ML Skills</h2>
+
+    <div class="skills-wrapper">
+
+      <!-- Cybersecurity -->
+      <div class="skill-category" data-reveal>
+        <h3 class="h4">Cybersecurity</h3>
+        <ul class="skill-progress-list">
+
+          <li class="progress-item">
+            <div class="label-wrapper">
+              <span>Network Security</span>
+              <span>85%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-fill" style="width: 85%"></div>
+            </div>
+          </li>
+
+          <li class="progress-item">
+            <div class="label-wrapper">
+              <span>Penetration Testing</span>
+              <span>75%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-fill" style="width: 75%"></div>
+            </div>
+          </li>
+
+          <li class="progress-item">
+            <div class="label-wrapper">
+              <span>Ethical Hacking</span>
+              <span>80%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-fill" style="width: 80%"></div>
+            </div>
+          </li>
+
+          <li class="progress-item">
+            <div class="label-wrapper">
+              <span>SIEM Tools (Splunk)</span>
+              <span>70%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-fill" style="width: 70%"></div>
+            </div>
+          </li>
+
+          <li class="progress-item">
+            <div class="label-wrapper">
+              <span>Linux Security (Kali Linux)</span>
+              <span>85%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-fill" style="width: 85%"></div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- AI / Machine Learning -->
+      <div class="skill-category" data-reveal>
+        <h3 class="h4">AI / Machine Learning</h3>
+        <ul class="skill-progress-list">
+
+          <li class="progress-item">
+            <div class="label-wrapper">
+              <span>Python (Data Science)</span>
+              <span>80%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-fill" style="width: 80%"></div>
+            </div>
+          </li>
+
+          <li class="progress-item">
+            <div class="label-wrapper">
+              <span>Data Analysis (Pandas, NumPy)</span>
+              <span>75%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-fill" style="width: 75%"></div>
+            </div>
+          </li>
+
+          <li class="progress-item">
+            <div class="label-wrapper">
+              <span>Machine Learning (Scikit-learn)</span>
+              <span>70%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-fill" style="width: 70%"></div>
+            </div>
+          </li>
+
+          <li class="progress-item">
+            <div class="label-wrapper">
+              <span>Deep Learning (TensorFlow / PyTorch)</span>
+              <span>65%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-fill" style="width: 65%"></div>
+            </div>
+          </li>
+
+          <li class="progress-item">
+            <div class="label-wrapper">
+              <span>Data Visualization</span>
+              <span>75%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-fill" style="width: 75%"></div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- DevOps / Tools -->
+      <div class="skill-category" data-reveal>
+        <h3 class="h4">Tools & DevOps</h3>
+        <ul class="skill-progress-list">
+
+          <li class="progress-item">
+            <div class="label-wrapper">
+              <span>Git & GitHub</span>
+              <span>85%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-fill" style="width: 85%"></div>
+            </div>
+          </li>
+
+          <li class="progress-item">
+            <div class="label-wrapper">
+              <span>Docker</span>
+              <span>70%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-fill" style="width: 70%"></div>
+            </div>
+          </li>
+
+          <li class="progress-item">
+            <div class="label-wrapper">
+              <span>Linux (Ubuntu / Kali)</span>
+              <span>85%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-fill" style="width: 85%"></div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="skill-category" data-reveal>
+        <h3 class="h4">Professional Skills</h3>
+        <ul class="skill-progress-list">
+
+          <li class="progress-item">
+            <div class="label-wrapper">
+              <span>Problem Solving</span>
+              <span>95%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-fill" style="width: 95%"></div>
+            </div>
+          </li>
+
+          <li class="progress-item">
+            <div class="label-wrapper">
+              <span>Critical Thinking</span>
+              <span>90%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-fill" style="width: 90%"></div>
+            </div>
+          </li>
+
+          <li class="progress-item">
+            <div class="label-wrapper">
+              <span>Team Collaboration</span>
+              <span>85%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-fill" style="width: 85%"></div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+      <!-- 
+        - #EDUCATION
+      -->
+
+      <section class="education" id="education">
+        <div class="education-content section-content">
+          <p class="section-subtitle container" id="education-section-label">My Education</p>
+          <h3 class="h3 card-title" style="text-align: center;">My Qualifications & Certifications</h3>
+      
+          <div class="education-toggle" data-toggle-box>
+            <button class="toggle-btn active" data-toggle-btn>Qualifications</button>
+            <button class="toggle-btn" data-toggle-btn>Certifications</button>
+          </div>
+        </div>
+      
+        <div class="container education-box">
+          <!-- Qualifications List -->
+          <ul class="qualification-list active" aria-hidden="false">
+            <li class="qualification-card">
+              <div class="card-logo">
+                <img src="./assets/images/university-logo-1.jpg" alt="University 1 Logo" width="200" height="200">
+              </div>
+              <div class="card-content">
+                <h3 class="h4 card-title">B.Sc. in Data Science</h3>
+                <p class="card-subtitle">Cardiff Metropolitan University</p>
+                <time class="publish-date" datetime="2025-2028">2025 - 2028</time>
+              </div>
+            </li>
+            <li class="qualification-card">
+              <div class="card-logo">
+                 <img src="./assets/images/university-logo-2.png" alt="Institute Logo" width="100" height="100">
+              </div>
+              <div class="card-content">
+                <h3 class="h4 card-title">Higher Diploma in Computer Eng.</h3>
+                <p class="card-subtitle">Tech Institute Online</p>
+                <time class="publish-date" datetime="2019">2019</time>
+              </div>
+            </li>
+          </ul>
+      
+          <!-- Certifications List -->
+          <ul class="certification-list" aria-hidden="true">
+            <li><a href="#" class="certification-card-link"><figure class="card-banner"><img src="./assets/images/category-1.jpg" alt=""></figure><div class="card-content"><h4 class="card-title">Advanced CSS</h4><p class="card-issuer">LinkedIn Learning</p></div></a></li>
+            <li><a href="#" class="certification-card-link"><figure class="card-banner"><img src="./assets/images/category-2.jpg" alt=""></figure><div class="card-content"><h4 class="card-title">React Basics</h4><p class="card-issuer">Coursera</p></div></a></li>
+            <li><a href="#" class="certification-card-link"><figure class="card-banner"><img src="./assets/images/category-2.jpg" alt=""></figure><div class="card-content"><h4 class="card-title">React Basics</h4><p class="card-issuer">Coursera</p></div></a></li>
+            <li class="hidden-cert"><a href="#" class="certification-card-link"><figure class="card-banner"><img src="./assets/images/category-3.jpg" alt=""></figure><div class="card-content"><h4 class="card-title">UI/UX Design</h4><p class="card-issuer">Udemy</p></div></a></li>
+            <li class="hidden-cert"><a href="#" class="certification-card-link"><figure class="card-banner"><img src="./assets/images/category-4.jpg" alt=""></figure><div class="card-content"><h4 class="card-title">Node.js Essentials</h4><p class="card-issuer">Pluralsight</p></div></a></li>
+            <li class="hidden-cert"><a href="#" class="certification-card-link"><figure class="card-banner"><img src="./assets/images/category-5.jpg" alt=""></figure><div class="card-content"><h4 class="card-title">Agile Foundations</h4><p class="card-issuer">LinkedIn Learning</p></div></a></li>
+            <li class="hidden-cert"><a href="#" class="certification-card-link"><figure class="card-banner"><img src="./assets/images/category-6.jpg" alt=""></figure><div class="card-content"><h4 class="card-title">Python for Everybody</h4><p class="card-issuer">Coursera</p></div></a></li>
+            <li class="hidden-cert"><a href="#" class="certification-card-link"><figure class="card-banner"><img src="./assets/images/category-7.jpg" alt=""></figure><div class="card-content"><h4 class="card-title">Web Accessibility</h4><p class="card-issuer">edX</p></div></a></li>
+            <li class="hidden-cert"><a href="#" class="certification-card-link"><figure class="card-banner"><img src="./assets/images/category-8.jpg" alt=""></figure><div class="card-content"><h4 class="card-title">Graphic Design Masterclass</h4><p class="card-issuer">Udemy</p></div></a></li>
+          </ul>
+          
+          <button class="load-more" data-load-more-certs>Load More</button>
+        </div>
+      </section>
+
+
+        
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" id="services" aria-labelledby="services-label">
+        <p class="section-subtitle container" id="services-label">My Services</p>
+        
+
+        <ul class="service-list">
+
+          <li data-reveal>
+            <div class="service-card container">
+
+              <img src="./assets/images/service-1.jpg" width="340" height="380" loading="lazy" alt="Wedding Photography"
+                class="img">
+
+              <div>
+                <h3 class="h3 card-title">Web & App Development</h3>
+
+                <p class="card-subtitle">
+                  Aut temporibus qui vero.
+                </p>
+              </div>
+
+              <a href="#" class="btn-icon" aria-label="See more">
+                <svg xmlns="http://www.w3.org/2000/svg" width="43" height="20" viewBox="0 0 43 20" fill="none">
+                  <path d="M0 10H41" stroke="currentColor" stroke-width="2" />
+                  <path d="M33 1L41.9 10.2727L33 19" stroke="currentColor" stroke-width="2" />
+                </svg>
+              </a>
+
+            </div>
+          </li>
+
+          <li data-reveal>
+            <div class="service-card container">
+
+              <img src="./assets/images/service-2.jpg" width="340" height="380" loading="lazy" alt="Event Organiser"
+                class="img">
+
+              <div>
+                <h3 class="h3 card-title">UI/UX Design</h3>
+
+                <p class="card-subtitle">
+                  Nobis, magni modi ipsa culpa.
+                </p>
+              </div>
+
+              <a href="#" class="btn-icon" aria-label="See more">
+                <svg xmlns="http://www.w3.org/2000/svg" width="43" height="20" viewBox="0 0 43 20" fill="none">
+                  <path d="M0 10H41" stroke="currentColor" stroke-width="2" />
+                  <path d="M33 1L41.9 10.2727L33 19" stroke="currentColor" stroke-width="2" />
+                </svg>
+              </a>
+
+            </div>
+          </li>
+
+          <li data-reveal>
+            <div class="service-card container">
+
+              <img src="./assets/images/service-3.jpg" width="340" height="380" loading="lazy" alt="Product Marketing"
+                class="img">
+
+              <div>
+                <h3 class="h3 card-title">Game Development</h3>
+
+                <p class="card-subtitle">
+                  Tenetur porro repellendus!
+                </p>
+              </div>
+
+              <a href="#" class="btn-icon" aria-label="See more">
+                <svg xmlns="http://www.w3.org/2000/svg" width="43" height="20" viewBox="0 0 43 20" fill="none">
+                  <path d="M0 10H41" stroke="currentColor" stroke-width="2" />
+                  <path d="M33 1L41.9 10.2727L33 19" stroke="currentColor" stroke-width="2" />
+                </svg>
+              </a>
+
+            </div>
+          </li>
+
+          <li data-reveal>
+            <div class="service-card container">
+
+              <img src="./assets/images/service-4.jpg" width="340" height="380" loading="lazy" alt="Videography"
+                class="img">
+
+              <div>
+                <h3 class="h3 card-title">Videography & 3D Animation</h3>
+
+                <p class="card-subtitle">
+                  Amet consectetur adipisicing elit
+                </p>
+              </div>
+
+              <a href="#" class="btn-icon" aria-label="See more">
+                <svg xmlns="http://www.w3.org/2000/svg" width="43" height="20" viewBox="0 0 43 20" fill="none">
+                  <path d="M0 10H41" stroke="currentColor" stroke-width="2" />
+                  <path d="M33 1L41.9 10.2727L33 19" stroke="currentColor" stroke-width="2" />
+                </svg>
+              </a>
+
+            </div>
+          </li>
+
+        </ul>
+      </section>
+
+
+
+
+        <!-- 
+        - #PORTFOLIO
+      -->
+  <section class="news" id="news" aria-labelledby="news-section-label">
+    <div class="container">
+      <div class="news-content section-content">
+        <h2 class="h2 section-title" id="portfolio-label" data-reveal>My Recent Work.</h2>
+        
+      </div>
+
+      <ul class="project-list news-grid">
+        <li>
+          <a href="#" class="project-card" aria-label="View item">
+            <figure class="card-banner">
+              <img src="./assets/images/gallery-1.jpg" class="w-100" alt="Feature image 1">
+            </figure>
+            <div class="card-content">
+              <h3 class="h4 card-title">Achievement Highlight</h3>
+              <time class="publish-date" datetime="2025-04">Apr 2025</time>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="project-card" aria-label="View item">
+            <figure class="card-banner">
+              <img src="./assets/images/gallery-2.jpg" class="w-100" alt="Feature image 2">
+            </figure>
+            <div class="card-content">
+              <h3 class="h4 card-title">Workshop & Event</h3>
+              <time class="publish-date" datetime="2025-03">Mar 2025</time>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="project-card" aria-label="View item">
+            <figure class="card-banner">
+              <img src="./assets/images/gallery-3.jpg" class="w-100" alt="Feature image 3">
+            </figure>
+            <div class="card-content">
+              <h3 class="h4 card-title">Client Feature</h3>
+              <time class="publish-date" datetime="2025-02">Feb 2025</time>
+            </div>
+          </a>
+        </li>
+
+        <li class="is-hidden">
+          <a href="#" class="project-card" aria-label="View item">
+            <figure class="card-banner">
+              <img src="./assets/images/gallery-5.jpg" class="w-100" alt="Feature image 5">
+            </figure>
+            <div class="card-content">
+              <h3 class="h4 card-title">New Collaboration</h3>
+              <time class="publish-date" datetime="2024-12">Dec 2024</time>
+            </div>
+          </a>
+        </li>
+
+        <li class="is-hidden">
+          <a href="#" class="project-card" aria-label="View item">
+            <figure class="card-banner">
+              <img src="./assets/images/gallery-6.jpg" class="w-100" alt="Feature image 6">
+            </figure>
+            <div class="card-content">
+              <h3 class="h4 card-title">Behind The Scenes</h3>
+              <time class="publish-date" datetime="2024-11">Nov 2024</time>
+            </div>
+          </a>
+        </li>
+
+        <li class="is-hidden">
+          <a href="#" class="project-card" aria-label="View item">
+            <figure class="card-banner">
+              <img src="./assets/images/gallery-7.jpg" class="w-100" alt="Feature image 7">
+            </figure>
+            <div class="card-content">
+              <h3 class="h4 card-title">Community Feature</h3>
+              <time class="publish-date" datetime="2024-10">Oct 2024</time>
+            </div>
+          </a>
+        </li>
+
+        <li class="is-hidden">
+          <a href="#" class="project-card" aria-label="View item">
+            <figure class="card-banner">
+              <img src="./assets/images/gallery-8.jpg" class="w-100" alt="Feature image 8">
+            </figure>
+            <div class="card-content">
+              <h3 class="h4 card-title">Special Project</h3>
+              <time class="publish-date" datetime="2024-09">Sep 2024</time>
+            </div>
+          </a>
+        </li>
+
+        <li class="is-hidden">
+          <a href="#" class="project-card" aria-label="View item">
+            <figure class="card-banner">
+              <img src="./assets/images/gallery-2.jpg" class="w-100" alt="Feature image 9">
+            </figure>
+            <div class="card-content">
+              <h3 class="h4 card-title">Award Shortlist</h3>
+              <time class="publish-date" datetime="2024-08">Aug 2024</time>
+            </div>
+          </a>
+        </li>
+
+        <li class="is-hidden">
+          <a href="#" class="project-card" aria-label="View item">
+            <figure class="card-banner">
+              <img src="./assets/images/gallery-5.jpg" class="w-100" alt="Feature image 10">
+            </figure>
+            <div class="card-content">
+              <h3 class="h4 card-title">Feature Interview</h3>
+              <time class="publish-date" datetime="2024-07">Jul 2024</time>
+            </div>
+          </a>
+        </li>
+
+        <li class="load-more-item">
+          <button class="load-more" type="button" data-load-more-projects>Load more</button>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+
+
+
+
+       <!-- ==============================
+      NEWS & EVENTS
+  =============================== -->
+
+      <section class="section portfolio" id="portfolio" aria-labelledby="portfolio-label">
+        <div class="container">
+
+          <div class="portfolio-list">
+
+            <div class="wrapper">
+
+              <p class="section-subtitle container" id="news-section-label">Latest News & Events</p>
+        <h2 class="h3 card-title" style="text-align: center;">News & Events</h2>
+
+              <div class="portfolio-card" data-reveal>
+
+                <figure class="card-banner img-holder has-before" style="--width: 700; --height: 605;">
+                  <img src="./assets/images/portfolio-1.jpg" width="700" height="605" loading="lazy" alt="Shoe Promo"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4">
+                    <a href="#" class="card-title">Shoe Promo</a>
+                  </h3>
+
+                  <p class="card-tag">Product</p>
+                </div>
+
+                <a href="#" class="btn-icon" aria-label="See more">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="43" height="20" viewBox="0 0 43 20" fill="none">
+                    <path d="M0 10H41" stroke="currentColor" stroke-width="2" />
+                    <path d="M33 1L41.9 10.2727L33 19" stroke="currentColor" stroke-width="2" />
+                  </svg>
+                </a>
+
+              </div>
+
+              <div class="portfolio-card" data-reveal>
+
+                <figure class="card-banner img-holder has-before" style="--width: 700; --height: 1091;">
+                  <img src="./assets/images/portfolio-2.jpg" width="700" height="1091" loading="lazy" alt="Wedding Shot"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4">
+                    <a href="#" class="card-title">Wedding Shot</a>
+                  </h3>
+
+                  <p class="card-tag">Wedding</p>
+                </div>
+
+                <a href="#" class="btn-icon" aria-label="See more">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="43" height="20" viewBox="0 0 43 20" fill="none">
+                    <path d="M0 10H41" stroke="currentColor" stroke-width="2" />
+                    <path d="M33 1L41.9 10.2727L33 19" stroke="currentColor" stroke-width="2" />
+                  </svg>
+                </a>
+
+              </div>
+
+            </div>
+
+            <div class="wrapper">
+
+              <div class="portfolio-card" data-reveal>
+
+                <figure class="card-banner img-holder has-before" style="--width: 700; --height: 1000;">
+                  <img src="./assets/images/portfolio-3.jpg" width="700" height="1000" loading="lazy" alt="Fashion Show"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4">
+                    <a href="#" class="card-title">Fashion Show</a>
+                  </h3>
+
+                  <p class="card-tag">Fashion, Model</p>
+                </div>
+
+                <a href="#" class="btn-icon" aria-label="See more">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="43" height="20" viewBox="0 0 43 20" fill="none">
+                    <path d="M0 10H41" stroke="currentColor" stroke-width="2" />
+                    <path d="M33 1L41.9 10.2727L33 19" stroke="currentColor" stroke-width="2" />
+                  </svg>
+                </a>
+
+              </div>
+
+              <div class="portfolio-card" data-reveal>
+
+                <figure class="card-banner img-holder has-before" style="--width: 700; --height: 850;">
+                  <img src="./assets/images/portfolio-4.jpg" width="700" height="850" loading="lazy" alt="Jumbo Burger"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4">
+                    <a href="#" class="card-title">Jumbo Burger</a>
+                  </h3>
+
+                  <p class="card-tag">Food</p>
+                </div>
+
+                <a href="#" class="btn-icon" aria-label="See more">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="43" height="20" viewBox="0 0 43 20" fill="none">
+                    <path d="M0 10H41" stroke="currentColor" stroke-width="2" />
+                    <path d="M33 1L41.9 10.2727L33 19" stroke="currentColor" stroke-width="2" />
+                  </svg>
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <img src="./assets/images/portfolio-shape.svg" width="286" height="232" loading="lazy" alt="" class="shape">
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+ 
+
+
+
+  <!-- ==============================
+      FOOTER SECTION
+================================= -->
+<footer class="footer">
+
+  <!-- FOOTER TOP -->
+  <div class="footer-top section" id="contact">
+    <div class="container">
+
+      <p class="section-subtitle" data-reveal>Contact Us</p>
+
+      <h2 class="h2 section-title" data-reveal>
+        Work inquiry, job opportunities? Send a message.
+      </h2>
+
+      <div class="contact__container container grid">
+                <div class="contact__content">
+                    <h3 class="contact__title contact__title-info">Talk to me</h3>
+
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class='bx bx-mail-send contact__card-icon'></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">omiruonline@gmail.com</span>
+
+                            <a href="mailto:omiruonline@gmail.com" target="_blank" class="contact__button">
+                                Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class='bx bxl-whatsapp contact__card-icon'></i>
+                            <h3 class="contact__card-title">Whatsapp</h3>
+                            <span class="contact__card-data">0772602443</span>
+
+                            <a href="https://wa.me/94772602443" target="_blank" class="contact__button">
+                                Message Me <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <h3 class="contact__title contact__title-form">Write Me your Message</h3>
+
+                    <form action="" class="contact__form">
+                        <div class="contact__form-div">
+                            <label for="name" class="contact__form-tag"></label>
+                            <input type="text" id="name" placeholder="Enter name" class="contact__form-input">
+                        </div>
+
+                        <div class="contact__form-div">
+                            <label for="email" class="contact__form-tag"></label>
+                            <input type="email" id="email" placeholder="Enter email" class="contact__form-input">
+                        </div>
+
+                        <div class="contact__form-div">
+                            <label for="phone" class="contact__form-tag"></label>
+                            <input type="tel" id="phone" placeholder="Enter phone number" class="contact__form-input">
+                        </div>
+
+                        <div class="contact__form-div contact__form-area">
+                            <label for="message" class="contact__form-tag"></label>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your Message"
+                                class="contact__form-input "></textarea>
+                        </div>
+
+
+                        <button class="button">Send Message</button>
+
+                    </form>
+
+                </div>
+            </div>
+
+      <!-- Decorative Images -->
+      <img src="./assets/images/footer-1.jpg" width="159" height="176" loading="lazy" alt="photography"
+        class="abs-img abs-img-1" data-reveal>
+      <img src="./assets/images/footer-2.jpg" width="265" height="275" loading="lazy" alt="photography"
+        class="abs-img abs-img-2" data-reveal>
+      <img src="./assets/images/footer-3.jpg" width="303" height="272" loading="lazy" alt="photography"
+        class="abs-img abs-img-3" data-reveal>
+      <img src="./assets/images/footer-4.jpg" width="175" height="175" loading="lazy" alt="photography"
+        class="abs-img abs-img-4" data-reveal>
+
+      <img src="./assets/images/footer-shape.svg" width="185" height="134" loading="lazy" alt="decorative shape"
+        class="shape">
+
+    </div>
+  </div>
+
+  <!-- FOOTER BOTTOM -->
+  <div class="footer-bottom">
+    <div class="container">
+
+      <!-- LOGO -->
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" width="40" height="40" loading="lazy" alt="Omiru Home">
+      </a>
+
+      <!-- SOCIAL ICONS & LINKS -->
+      <ul class="social-list">
+        <li>
+          <a href="https://www.linkedin.com/in/omiru/" target="_blank" rel="noopener noreferrer"
+             class="social-link" aria-label="LinkedIn" data-label="LinkedIn">
+            <i class='bx bxl-linkedin'></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank" rel="noopener noreferrer"
+             class="social-link" aria-label="Facebook" data-label="Facebook">
+            <i class='bx bxl-facebook'></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank" rel="noopener noreferrer"
+             class="social-link" aria-label="TikTok" data-label="TikTok">
+            <i class='bx bxl-tiktok'></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank" rel="noopener noreferrer"
+             class="social-link" aria-label="Twitter" data-label="Twitter">
+            <i class='bx bxl-twitter'></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank" rel="noopener noreferrer"
+             class="social-link" aria-label="Instagram" data-label="Instagram">
+            <i class='bx bxl-instagram'></i>
+          </a>
+        </li>
+      </ul>
+
+      <!-- COPYRIGHT -->
+      <p class="copyright">
+        <span>Made with ❤️</span>
+        &copy; 2025 <a href="#">Omiru Ranshan</a>. All rights reserved.
+
+      </p>
+
+    </div>
+  </div>
+
+  <!-- FOOTER BACKGROUND -->
+  <div class="footer-bg">
+    <img src="./assets/images/footer-bg.jpg" width="1920" height="1135" loading="lazy" alt="photography"
+      class="img-cover">
+  </div>
+
+</footer>
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>0%</a>
+
+
+
+
+
+  <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+  <div class="cursor" data-cursor></div>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <!-- Chatbot + Voice Assistant -->
+  <div id="chatbot-icon" aria-label="Open chat" title="Chat with assistant">💬</div>
+
+  <div id="chatbot-container" class="hidden" aria-hidden="true" role="dialog" aria-label="Chatbot">
+    <header id="chatbot-header">
+      <strong>Assistant</strong>
+      <div class="chat-controls">
+        <button id="chatbot-mic" aria-label="Start voice input" title="Voice input">🎙️</button>
+        <button id="chatbot-close" aria-label="Close chat" title="Close">✕</button>
+      </div>
+    </header>
+
+    <main id="chatbot-body">
+      <div id="chatbot-messages" aria-live="polite"></div>
+    </main>
+
+    <div id="chatbot-input-container">
+      <input id="chatbot-input" type="text" placeholder="Type a message..." aria-label="Message input" />
+      <button id="chatbot-send">Send</button>
+    </div>
+  </div>
+  
+  <script src="./assets/js/chatbot.js" defer></script>
+  <!-- Touch helpers -->
+  <script src="./assets/js/mobile-touch.js" defer></script>
+</body>
+
+</html>
